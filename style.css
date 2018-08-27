@@ -16,12 +16,15 @@ body {
 }
 
 h1,
-h2,
+h2 {
+    letter-spacing: .5px;
+    font-family: 'Roboto';
+    },
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-top: 0;
     line-height: 1;
     letter-spacing: 0px;
@@ -680,15 +683,16 @@ nav {
     font-size: 22px
 }
 .service-content {
-    padding: 50px 10px;
+    padding: 30px 30px 30px 30px;
     position: relative;
     text-align: center;
     transition: all 0.5s ease 0s;
-    margin: 0px 0 0;
+    margin: 0px  0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     min-height: 300px;
-    padding-bottom: 10px; margin-bottom: 30px;     background: #fff;
+    padding-bottom: 10px; margin-bottom: 60px;     
+    background: #fff;
 }
 .service-content h3 {
     font-size: 28px;
@@ -702,7 +706,7 @@ nav {
 
 .service-icon::before {
     position: absolute;
-    left: 60px;
+    left:  20px;
     border: 1px solid #00a2ff;
     width: 20%;
     content: "";
@@ -711,7 +715,7 @@ nav {
 
 .service-icon::after {
     position: absolute;
-    right: 60px;
+    right: 20px;
     border: 1px solid #00a2ff;
     width: 20%;
     content: "";
@@ -719,7 +723,7 @@ nav {
 }
 
 .service-content i.fa {
-    font-size: 30px;
+    font-size: 50px;
     color: #00a2ff;
     width: 60px;
     height: 60px;
@@ -729,20 +733,20 @@ nav {
     border: 1px solid #00a2ff;
 }
 .service-icon i {
-  
     border: 2px solid #00a2ff;
     padding: 10px;
     border-radius: 50%;
 }
 .service-icon img {
-    width: 60px;
+    width: 120px;
+    height: 120px;
 }
 .service-icon i {
-    border: 2px solid #00a2ff;
+    border: 0px solid #00a2ff;
     padding: 10px;
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
+    width: 150px;
+    height: 150px;
     display: inline-block;
 }
 
@@ -1257,7 +1261,7 @@ ul.how_grid_works:before {
 }
 .feature-icon .icon {
     border: 1px solid #f0f0f0;
-    padding: 4px;
+    padding: 10px;
     border-radius: 50%;
     position: absolute;
 	background: #fff;
@@ -1267,13 +1271,19 @@ ul.how_grid_works:before {
 }
 .feature-icon .icon > div {
     background: #f0f0f0;
-    width: 55px;
-    height: 55px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     color: #1b212c;
 	text-align: center;
-    line-height: 60px;
+    line-height: 85px;
 }
+
+.feature-icon .icon img {
+    width: 60px;
+    height: 60px;
+}
+
 .feature-icon .content_work {
     margin-left: 90px;
 	margin-top: 4px;
@@ -1282,6 +1292,11 @@ ul.how_grid_works:before {
     font-size: 1.25rem;
     font-weight: 500;
 	margin-bottom: 5px;
+}
+.content_work h4 {
+    font-size:  20px;
+    font-weight: bold;
+    color:#000;
 }
 span.step {
     background: #f89406;
@@ -1299,7 +1314,7 @@ span.step {
 .feature-icon .content_work p {
     font-size: 16px;
     letter-spacing: 0.6px;
-    line-height: 25px;
+    line-height: 40px;
 }
 .h_img img {
     max-width: 420px;
@@ -1312,15 +1327,15 @@ span.step {
 }
 ul.how_grid_works {
     position: relative;
-    list-style-type: none;     text-align: left;
+    list-style-type: none;     
+    text-align: left;
 }
 .feature-icon {
     position: relative;
     margin-bottom: 3rem;
 }
 .feature-icon .content_work {
-    margin-left: 90px;
-    margin-top: 4px;
+    margin-left: 120px;
 }
 .feature-icon .content_work, .feature-icon .fa {
     display: inline-block;
@@ -1439,3 +1454,39 @@ ul {
     font-size: 100px;
     color: #00a2ff;
 }
+
+#circle_accept {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #666;
+      display: table-cell;
+      vertical-align: middle; 
+      text-align: center;
+      text-decoration: none;
+    }
+
+#circle_accept img{
+    width: 100px;
+    height: 100px;
+}
+
+.investbox {
+    color: #fff;
+}
+
+.investbox h3{
+    color: #fff;
+    font-weight:bold;
+    padding: 20px 20px 10px 20px;
+}
+
+.investbox h4{
+    color: #fff;
+    font-weight:bold;
+}
+
+.investbox p{
+    padding: px 20px px 20px;
+}
+
