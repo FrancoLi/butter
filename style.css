@@ -83,19 +83,19 @@ input:focus {
     padding: 70px 0;
 }
 .title {
-    padding: 0 0 65px;
+    padding: 0 0 25px;
 }
 
-.title h2 {
+.title_aboutus, .title h2 {
     font-size: 35px;
     position: relative;
-    padding: 0 0 10px;
+    padding: 10px 0 0 0px;
     text-transform: none;
-    color: #272727;
+    color: #001623;
     font-weight: 500;
 	margin-bottom: 0;
 }
-.title p {
+.title_aboutus, .title p {
     padding: 30px 0 0;
     margin: 0;
     font-size: 17px;
@@ -110,8 +110,6 @@ input:focus {
     color: #00a2ff;
     
 }
-
-
 
 .separate::after {
     position: absolute;
@@ -305,8 +303,6 @@ input:focus {
     width: 100%;
     border-bottom: 3px solid rgba(255, 255, 255, 0.3); padding-bottom: 0;
 }
-
-
 
 nav {
     margin: 0 !important;
@@ -1186,8 +1182,8 @@ ul.how_grid_works {
 ul.how_grid_works:before {
     content: "";
     position: absolute;
-    left: 30px;
-    height: 100%;
+    left: 50px;
+    height: 90%;
     width: 1.5px;
     background: #eee;
 	top: 0;
@@ -1255,10 +1251,15 @@ ul.how_grid_works:before {
 .animation-element.fadein{transition-timing-function:ease-in;transition-duration:.7s;opacity:0}
 .animation-element.fadein.in-view{opacity:1;transition-timing-function:ease-in;transition-duration:.7s}
 
-.feature-icon {
+.feature-icon, .feature-icon-invest, .feature-icon-borrow {
     position: relative;
     margin-bottom: 3rem;
 }
+
+.feature-icon-borrow{
+    padding: 25px 0 25px 0;
+}
+
 .feature-icon .icon {
     border: 1px solid #f0f0f0;
     padding: 10px;
@@ -1266,7 +1267,20 @@ ul.how_grid_works:before {
     position: absolute;
 	background: #fff;
 }
-.feature-icon .content_work, .feature-icon .fa{
+
+.feature-icon-invest .icon {
+    padding-top: 70px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.feature-icon-borrow .icon {
+    padding-top: px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.feature-icon .content_work, .feature-icon .fa, .feature-icon-invest .content_work_invest, .feature-icon-borrow .title{
     display: inline-block;
 }
 .feature-icon .icon > div {
@@ -1288,6 +1302,18 @@ ul.how_grid_works:before {
     margin-left: 90px;
 	margin-top: 4px;
 }
+
+.feature-icon-invest .content_work_invest {
+    margin-left: 150px;
+    margin-top: 75px;
+    margin-right: 30px;
+}
+
+.feature-icon-borrow .title {
+    margin-left: 170px;
+    margin-right: 30px;
+}
+
 .content_work h5 {
     font-size: 1.25rem;
     font-weight: 500;
@@ -1298,6 +1324,8 @@ ul.how_grid_works:before {
     font-weight: bold;
     color:#000;
 }
+
+
 span.step {
     background: #f89406;
     font-weight: 600;
@@ -1385,7 +1413,13 @@ ul {
     color: #fff;
     margin-bottom: 0;
     font-size: 50px;
-    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.banner_vs h4 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 30px;
     letter-spacing: 1px;
 }
 .pt60{
@@ -1394,6 +1428,12 @@ ul {
 .pb60{
 	padding-bottom:60px;
 }
+
+.content_vs_sum {
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
 .content_vs h3 {
     color: #272727;
     font-size: 36px;
@@ -1416,34 +1456,36 @@ ul {
 
 .content_vs_click h2{
     color:#fff;
-    font-weight: bold;
+    font-weight: ;
 }
 
 
 .content_vs_click p{
     color:#555;
-    font-weight:bold;
+    font-weight:;
 }
 
 .content_vs_values {
-    background-color:#555;
+    background-color:#f9f9f9;
     padding: 50px 0 50px 0;
-    color:#fff;
+    color:#000;
 }
 
 .content_vs_values p{
-    color: #fff;
+    color: #000;
 }
 
 .content_vs_values h4{
     color:#000;
+    font-weight:bold;
+    font-size:50px;
 }
 
 #circle {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      background: white;
+      background: #f89406;
       display: table-cell;
       vertical-align: middle; 
       text-align: center;
@@ -1471,22 +1513,106 @@ ul {
     height: 100px;
 }
 
+#circle_borrow {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px solid #00a2ff;
+      display: table-cell;
+      vertical-align: middle; 
+      text-align: center;
+      text-decoration: none;
+    }
+
 .investbox {
-    color: #fff;
+    color: #555;
+    padding: 30px 0 300px 0;
 }
 
 .investbox h3{
-    color: #fff;
+    color: #555;
     font-weight:bold;
-    padding: 20px 20px 10px 20px;
-}
+    }
 
 .investbox h4{
-    color: #fff;
+    color: #555;
     font-weight:bold;
 }
 
-.investbox p{
-    padding: px 20px px 20px;
+.content_vs_white {
+    background-color:#fff;
+    padding: 50px 0 50px 0;
 }
 
+.quarter_section_title h2{
+    font-size: 30px;
+    position: relative;
+    padding: 10px 0 10px 0;
+    text-transform: none;
+    color: #272727;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#invest_highlight {
+    color: #000;
+}
+
+.title_aboutus {
+    padding: 0 0 5px;
+}
+
+.under_circle_title p{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.under_circle_title hr{
+    color: #f89406;
+    background-color:#f89406;
+    width: 30%;
+    height: 3px;
+    border: none;
+}
+
+.content_work_invest h4 {
+    font-size:  15px;
+    font-weight: bold;
+    color:#f89406;
+}
+
+.content_work_invest_qtr h4 {
+    font-size:  20px;
+    font-weight: bold;
+    color:#000;
+}
+
+#qtr_col_invest {
+    border-right: 1px solid #00a2ff;
+    height: 140px;
+    padding: 0px 20px 0px 20px;
+}
+
+.vl {
+    border-left: 1px solid orange;
+    height: 75px;
+    padding: 0 5px 0 5px;
+}
+
+.three_column_content, .borrow_two_col_content h5{
+    font-size:20px;
+    position: inline-block;
+}
+
+.borrow_two_col_content ul{
+    list-style: square;
+}
+
+.borrow_two_col_content li{
+    color: #f89406;
+    font-size: 20px;
+}
+
+.borrow_two_col_content li span{
+    color: #000;
+}
